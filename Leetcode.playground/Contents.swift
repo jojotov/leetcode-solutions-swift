@@ -1,3 +1,41 @@
+class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+}
+
+struct Graph {
+    var value: String
+    var neighbours: [Graph]?
+}
+
+public class TreeNode {
+    public var val: Int
+    public var left: TreeNode?
+    public var right: TreeNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.left = nil
+        self.right = nil
+    }
+    
+    static var testRoot: TreeNode {
+        let leaf4 = TreeNode(4)
+        let leaf5 = TreeNode(5)
+        let node4 = TreeNode(4)
+        let node5 = TreeNode(5)
+        let root = TreeNode(1)
+        node4.left = leaf4
+        node4.right = leaf4
+        node5.right = leaf5
+        root.left = node4
+        root.right = node5
+        return root
+    }
+}
 
 /*:
  ## 367. Valid Perfect Square
@@ -58,30 +96,6 @@ isPerfectSquare(2147483647)
  ```
  */
 
-public class TreeNode {
-    public var val: Int
-    public var left: TreeNode?
-    public var right: TreeNode?
-    public init(_ val: Int) {
-        self.val = val
-        self.left = nil
-        self.right = nil
-    }
-    
-    static var testRoot: TreeNode {
-        let leaf4 = TreeNode(4)
-        let leaf5 = TreeNode(5)
-        let node4 = TreeNode(4)
-        let node5 = TreeNode(5)
-        let root = TreeNode(1)
-        node4.left = leaf4
-        node4.right = leaf4
-        node5.right = leaf5
-        root.left = node4
-        root.right = node5
-        return root
-    }
-}
 
 func longestUnivaluePath(_ root: TreeNode?) -> Int {
     guard let root = root else {
@@ -125,10 +139,6 @@ longestUnivaluePath(TreeNode.testRoot)
  return its length 5.
  */
 
-struct Graph {
-    var value: String
-    var neighbours: [Graph]?
-}
 
 extension Graph {
     func bfs(_ end: Graph) -> Int {
@@ -453,4 +463,29 @@ class Solution_500 {
 Solution_500().findWords(["Hello","Alaska","Dad","Peace"])
 
 
+/*: 25. Reverse Nodes in k-Group
 
+ Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+ 
+ k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
+ 
+ You may not alter the values in the nodes, only nodes itself may be changed.
+ 
+ Only constant memory is allowed.
+ 
+ For example,
+ Given this linked list: `1->2->3->4->5`
+ 
+ For k = 2, you should return: `2->1->4->3->5`
+ 
+ For k = 3, you should return: `3->2->1->4->5`
+ */
+
+
+class Solution_25 {
+    func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
+        
+    }
+}
+ 
+ 
