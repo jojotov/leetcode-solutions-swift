@@ -5,6 +5,13 @@ class ListNode {
         self.val = val
         self.next = nil
     }
+    public func print() {
+        var p: ListNode? = self
+        while (p != nil) {
+            Swift.print( p?.val as Any)
+            p = p?.next
+        }
+    }
 }
 
 struct Graph {
@@ -484,8 +491,55 @@ Solution_500().findWords(["Hello","Alaska","Dad","Peace"])
 
 class Solution_25 {
     func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
+        if head?.next == nil || k <= 1{
+            return head
+        }
         
+        let dummy = ListNode(-1)
+        dummy.next = head
+        var start: ListNode? = dummy
+        
+        while true {
+            let prev = start
+            var n: ListNode? = prev, curr: ListNode? = prev
+            start = prev?.next
+            
+            for _ in 1...k {
+                if n == nil {
+                    break
+                }
+                n = n?.next
+            }
+            
+            if n == nil {
+                break
+            }
+            
+            for _ in 1..<k {
+                curr = prev?.next
+                prev?.next = curr?.next
+                curr?.next = n?.next
+                n?.next = curr
+            }
+        }
+        
+        return dummy.next
     }
 }
- 
- 
+
+let head = ListNode(1)
+let node2 = ListNode(2)
+let node3 = ListNode(3)
+let node4 = ListNode(4)
+let node5 = ListNode(5)
+let node6 = ListNode(6)
+
+head.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+node5.next = node6
+
+head.print()
+let newHead = Solution_25().reverseKGroup(head, 2)
+newHead!.print()
