@@ -8,7 +8,7 @@ class ListNode {
     public func print() {
         var p: ListNode? = self
         while (p != nil) {
-            Swift.print( p?.val as Any)
+            Swift.print(" \(p!.val) -> ")
             p = p?.next
         }
     }
@@ -444,8 +444,6 @@ class Solution_500 {
             }
         }
         
-        print(index)
-        
         while start != word.endIndex {
             if !keybord[index].contains(String(word[start])) {
                 return false
@@ -495,15 +493,21 @@ class Solution_25 {
             return head
         }
         
+        // 临时指针保持链表头
         let dummy = ListNode(-1)
         dummy.next = head
         var start: ListNode? = dummy
         
+        // 循环翻转
         while true {
+            // prev 指针指向当前区间的尾指针
             let prev = start
             var n: ListNode? = prev, curr: ListNode? = prev
+            
+            // start需要移动到下一区间开始位置
             start = prev?.next
             
+            // n 指针指向第k个节点
             for _ in 1...k {
                 if n == nil {
                     break
@@ -511,10 +515,12 @@ class Solution_25 {
                 n = n?.next
             }
             
+            // n已经走到链表尾端
             if n == nil {
                 break
             }
             
+            // 对k范围内的链表翻转
             for _ in 1..<k {
                 curr = prev?.next
                 prev?.next = curr?.next
@@ -540,6 +546,68 @@ node3.next = node4
 node4.next = node5
 node5.next = node6
 
-head.print()
 let newHead = Solution_25().reverseKGroup(head, 2)
-newHead!.print()
+newHead?.print()
+
+/*: 467. Unique Substrings in Wraparound String
+ 
+ Consider the string s to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so s will look like this: "...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....".
+ 
+ Now we have another string p. Your job is to find out how many unique non-empty substrings of p are present in s. In particular, your input is the string p and you need to output the number of different non-empty substrings of p in the string s.
+ 
+ Note: p consists of only lowercase English letters and the size of p might be over 10000.
+ 
+ Example 1:
+ ```
+ Input: "a"
+ Output: 1
+ Explanation: Only the substring "a" of string "a" is in the string s.
+ ```
+ 
+ Example 2:
+ ```
+ Input: "cac"
+ Output: 2
+ Explanation: There are two substrings "a", "c" of string "cac" in the string s.
+ ```
+ 
+ Example 3:
+ ```
+ Input: "zab"
+ Output: 6
+ Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string s.
+ ```
+*/
+
+class Solution_467 {
+    func findSubstringInWraproundString(_ p: String) -> Int {
+        if p.count == 0 {
+            return 0
+        }
+        
+        var counts: [Int] = []
+        var maxLength = 0
+//
+//        for i in 0..<p.count {
+//            let stringIndex = p.index(p.startIndex, offsetBy: i)
+//
+//            if i > 0 {
+//                if String(p[stringIndex]) - String(p[p.index(before: stringIndex)]) == 1,25 {
+//                    maxLength += 1
+//                }
+//
+//            } else {
+//                maxLength = 1
+//            }
+//
+//            let index = p[stringIndex] - "a"
+//            counts[index] = max
+//
+//        }
+//
+        return counts.reduce(0,+)
+    }
+}
+
+//Solution_467().findSubstringInWraproundString("zab")
+

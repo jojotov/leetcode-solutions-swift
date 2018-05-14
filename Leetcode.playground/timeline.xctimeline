@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timeline
+   version = "3.0">
+   <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jojoting/leetcode-solutions-swift/Leetcode.playground#CharacterRangeLen=45&amp;CharacterRangeLoc=6705&amp;EndingColumnNumber=5&amp;EndingLineNumber=260&amp;StartingColumnNumber=4&amp;StartingLineNumber=259&amp;Timestamp=543769080.228253"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jojoting/leetcode-solutions-swift/Leetcode.playground#CharacterRangeLen=255&amp;CharacterRangeLoc=6751&amp;EndingColumnNumber=3&amp;EndingLineNumber=269&amp;StartingColumnNumber=6&amp;StartingLineNumber=260&amp;Timestamp=543769080.2284141"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jojoting/leetcode-solutions-swift/Leetcode.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=9612&amp;EndingColumnNumber=6&amp;EndingLineNumber=337&amp;StartingColumnNumber=6&amp;StartingLineNumber=337&amp;Timestamp=543769080.228583"
+         lockedSize = "{175, 50}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+   </TimelineItems>
+</Timeline>
