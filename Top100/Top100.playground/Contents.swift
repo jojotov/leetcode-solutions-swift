@@ -43,7 +43,7 @@ class Solution_1 {
     }
 }
 
-Solution_1.twoSum([2, 7, 11, 15], 9)
+//Solution_1.twoSum([2, 7, 11, 15], 9)
 
 /*:
  ## 2. Add Two Numbers
@@ -82,5 +82,44 @@ class Solution_2 {
         return resultHead
     }
 }
+
+/*:
+ ## 3. Longest Substring Without Repeating Characters
+ 
+ Given a string, find the length of the longest substring without repeating characters.
+ 
+ Examples:
+ 
+ Given `"abcabcbb"`, the answer is `"abc"`, which the length is 3.
+ 
+ Given `"bbbbb"`, the answer is `"b"`, with the length of 1.
+ 
+ Given `"pwwkew"`, the answer is `"wke"`, with the length of 3. Note that the answer must be a substring, `"pwke"` is a subsequence and not a substring.
+*/
+
+class Solution_3 {
+    static func lengthOfLongestSubstring(_ s: String) -> Int {
+        guard s.count > 0 else {
+            return 0;
+        }
+        var count = 0
+        var map: [Character : Int] = [:]
+        var j = 0
+        for i in 0...s.count - 1 {
+            let index = s.index(s.startIndex, offsetBy: i)
+            let char = s[index]
+            if map.keys.contains(char) {
+                j = max(j, map[char]! + 1)
+            }
+            map[char] = i
+            count = max(count, i - j + 1)
+        }
+        return count
+    }
+}
+
+Solution_3.lengthOfLongestSubstring("abcabcbb")
+Solution_3.lengthOfLongestSubstring("pwwkew")
+//Solution_3.lengthOfLongestSubstring("bbbbb")
 
 
