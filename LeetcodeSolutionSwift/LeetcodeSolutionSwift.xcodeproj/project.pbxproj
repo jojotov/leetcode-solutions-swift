@@ -13,7 +13,18 @@
 		EB5F50922314263700222E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5F50902314263700222E63 /* Main.storyboard */; };
 		EB5F50942314263800222E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5F50932314263800222E63 /* Assets.xcassets */; };
 		EB5F50972314263800222E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5F50952314263800222E63 /* LaunchScreen.storyboard */; };
+		EB5F50A6231428A400222E63 /* LeetcodeSolutionSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F50A5231428A400222E63 /* LeetcodeSolutionSwiftTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB5F50A8231428A400222E63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB5F507F2314263700222E63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB5F50862314263700222E63;
+			remoteInfo = LeetcodeSolutionSwift;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EB5F50872314263700222E63 /* LeetcodeSolutionSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetcodeSolutionSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		EB5F50932314263800222E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5F50962314263800222E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB5F50982314263800222E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5F50A3231428A400222E63 /* LeetcodeSolutionSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetcodeSolutionSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5F50A5231428A400222E63 /* LeetcodeSolutionSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeSolutionSwiftTests.swift; sourceTree = "<group>"; };
+		EB5F50A7231428A400222E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EB5F50842314263700222E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB5F50A0231428A400222E63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +61,9 @@
 		EB5F507E2314263700222E63 = {
 			isa = PBXGroup;
 			children = (
+				EB5F509E2314276600222E63 /* DynamicProgramming */,
 				EB5F50892314263700222E63 /* LeetcodeSolutionSwift */,
+				EB5F50A4231428A400222E63 /* LeetcodeSolutionSwiftTests */,
 				EB5F50882314263700222E63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				EB5F50872314263700222E63 /* LeetcodeSolutionSwift.app */,
+				EB5F50A3231428A400222E63 /* LeetcodeSolutionSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +89,22 @@
 				EB5F50982314263800222E63 /* Info.plist */,
 			);
 			path = LeetcodeSolutionSwift;
+			sourceTree = "<group>";
+		};
+		EB5F509E2314276600222E63 /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
+		EB5F50A4231428A400222E63 /* LeetcodeSolutionSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB5F50A5231428A400222E63 /* LeetcodeSolutionSwiftTests.swift */,
+				EB5F50A7231428A400222E63 /* Info.plist */,
+			);
+			path = LeetcodeSolutionSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +127,24 @@
 			productReference = EB5F50872314263700222E63 /* LeetcodeSolutionSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EB5F50A2231428A400222E63 /* LeetcodeSolutionSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5F50AA231428A400222E63 /* Build configuration list for PBXNativeTarget "LeetcodeSolutionSwiftTests" */;
+			buildPhases = (
+				EB5F509F231428A400222E63 /* Sources */,
+				EB5F50A0231428A400222E63 /* Frameworks */,
+				EB5F50A1231428A400222E63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB5F50A9231428A400222E63 /* PBXTargetDependency */,
+			);
+			name = LeetcodeSolutionSwiftTests;
+			productName = LeetcodeSolutionSwiftTests;
+			productReference = EB5F50A3231428A400222E63 /* LeetcodeSolutionSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +157,10 @@
 				TargetAttributes = {
 					EB5F50862314263700222E63 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					EB5F50A2231428A400222E63 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = EB5F50862314263700222E63;
 					};
 				};
 			};
@@ -116,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				EB5F50862314263700222E63 /* LeetcodeSolutionSwift */,
+				EB5F50A2231428A400222E63 /* LeetcodeSolutionSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +191,13 @@
 				EB5F50972314263800222E63 /* LaunchScreen.storyboard in Resources */,
 				EB5F50942314263800222E63 /* Assets.xcassets in Resources */,
 				EB5F50922314263700222E63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB5F50A1231428A400222E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB5F509F231428A400222E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5F50A6231428A400222E63 /* LeetcodeSolutionSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB5F50A9231428A400222E63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB5F50862314263700222E63 /* LeetcodeSolutionSwift */;
+			targetProxy = EB5F50A8231428A400222E63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EB5F50902314263700222E63 /* Main.storyboard */ = {
@@ -316,6 +402,46 @@
 			};
 			name = Release;
 		};
+		EB5F50AB231428A400222E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EL267FJ9ZW;
+				INFOPLIST_FILE = LeetcodeSolutionSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.LeetcodeSolutionSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetcodeSolutionSwift.app/LeetcodeSolutionSwift";
+			};
+			name = Debug;
+		};
+		EB5F50AC231428A400222E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EL267FJ9ZW;
+				INFOPLIST_FILE = LeetcodeSolutionSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.LeetcodeSolutionSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetcodeSolutionSwift.app/LeetcodeSolutionSwift";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +459,15 @@
 			buildConfigurations = (
 				EB5F509C2314263800222E63 /* Debug */,
 				EB5F509D2314263800222E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB5F50AA231428A400222E63 /* Build configuration list for PBXNativeTarget "LeetcodeSolutionSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5F50AB231428A400222E63 /* Debug */,
+				EB5F50AC231428A400222E63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
