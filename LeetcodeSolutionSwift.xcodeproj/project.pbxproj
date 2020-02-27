@@ -7,43 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBCEACBB23F7DA5500166EB1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCEACBA23F7DA5500166EB1 /* main.swift */; };
-		EBCEACBD23F7DA7400166EB1 /* 198_HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCEACBC23F7DA7400166EB1 /* 198_HouseRobber.swift */; };
-		EBCEACC023F7DB7D00166EB1 /* 367_ValidPerfectSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCEACBF23F7DB7D00166EB1 /* 367_ValidPerfectSquare.swift */; };
-		EBD4538623F7E16000EA669B /* 665_NondecreasingArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538523F7E16000EA669B /* 665_NondecreasingArray.swift */; };
-		EBD4538823F7E1B500EA669B /* 496_TeemoAttacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538723F7E1B500EA669B /* 496_TeemoAttacking.swift */; };
-		EBD4538A23F7E1EE00EA669B /* 500_KeyboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538923F7E1EE00EA669B /* 500_KeyboardRow.swift */; };
-		EBD4538C23F7E22600EA669B /* 25_ReverseNodesInKGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538B23F7E22600EA669B /* 25_ReverseNodesInKGroup.swift */; };
-		EBD4538E23F7E23400EA669B /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538D23F7E23400EA669B /* ListNode.swift */; };
-		EBD4539023F7E26500EA669B /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538F23F7E26500EA669B /* Tree.swift */; };
-		EBD4539223F7E28800EA669B /* 687_LongestUnivaluePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539123F7E28800EA669B /* 687_LongestUnivaluePath.swift */; };
-		EBD4539423F7E2C400EA669B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539323F7E2C400EA669B /* Graph.swift */; };
-		EBD4539623F7E2E800EA669B /* 127_WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539523F7E2E800EA669B /* 127_WordLadder.swift */; };
-		EBD4539823F7E32300EA669B /* 452_Minimum NumberOfArrowsToBurstBalloons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539723F7E32300EA669B /* 452_Minimum NumberOfArrowsToBurstBalloons.swift */; };
-		EBD4539A23F7E35300EA669B /* 467_UniqueSubstringsInWraparoundString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539923F7E35300EA669B /* 467_UniqueSubstringsInWraparoundString.swift */; };
-		EBD4539C23F7E62C00EA669B /* 515_ FindLargestValueInEachTreeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539B23F7E62C00EA669B /* 515_ FindLargestValueInEachTreeRow.swift */; };
-		EBD4539E23F7E65A00EA669B /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539D23F7E65A00EA669B /* BinarySearchTree.swift */; };
-		EBD453A023F7E70C00EA669B /* 104_MaxDeethOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4539F23F7E70C00EA669B /* 104_MaxDeethOfBinaryTree.swift */; };
-		EBD453A223F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD453A123F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift */; };
-		EBE0DAB523F81BE800D36F06 /* 102_LevelOrderOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0DAB423F81BE800D36F06 /* 102_LevelOrderOfBinaryTree.swift */; };
-		EBE0DAB723F8212200D36F06 /* 107_LevelOrderFromBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0DAB623F8212200D36F06 /* 107_LevelOrderFromBottom.swift */; };
-		EBE0DAB923F825AF00D36F06 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */; };
+		EBE0C6BC240782D400DBBA41 /* LeetcodeSolutionSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE0C6BA240782D400DBBA41 /* LeetcodeSolutionSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE0C6C0240782E900DBBA41 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538F23F7E26500EA669B /* Tree.swift */; };
+		EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538D23F7E23400EA669B /* ListNode.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		EBCEACB023F7DA1D00166EB1 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		EBCEACB223F7DA1D00166EB1 /* LeetcodeSolutionSwiftHost */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetcodeSolutionSwiftHost; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCEACBA23F7DA5500166EB1 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EBCEACBC23F7DA7400166EB1 /* 198_HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 198_HouseRobber.swift; sourceTree = "<group>"; };
 		EBCEACBF23F7DB7D00166EB1 /* 367_ValidPerfectSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 367_ValidPerfectSquare.swift; sourceTree = "<group>"; };
@@ -62,13 +31,20 @@
 		EBD4539D23F7E65A00EA669B /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		EBD4539F23F7E70C00EA669B /* 104_MaxDeethOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 104_MaxDeethOfBinaryTree.swift; sourceTree = "<group>"; };
 		EBD453A123F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 111_MinDepthOfBinaryTree.swift; sourceTree = "<group>"; };
+		EBE0C69F2407807C00DBBA41 /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
+		EBE0C6A02407807C00DBBA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE0C6AD2407819400DBBA41 /* LeetcodeSolutionSwift_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift_iOS.h; sourceTree = "<group>"; };
+		EBE0C6AE2407819400DBBA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE0C6B8240782D400DBBA41 /* LeetcodeSolutionSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetcodeSolutionSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE0C6BA240782D400DBBA41 /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
+		EBE0C6BB240782D400DBBA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE0DAB423F81BE800D36F06 /* 102_LevelOrderOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 102_LevelOrderOfBinaryTree.swift; sourceTree = "<group>"; };
 		EBE0DAB623F8212200D36F06 /* 107_LevelOrderFromBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 107_LevelOrderFromBottom.swift; sourceTree = "<group>"; };
 		EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EBCEACAF23F7DA1D00166EB1 /* Frameworks */ = {
+		EBE0C6B5240782D400DBBA41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,11 +57,8 @@
 		EB5F507E2314263700222E63 = {
 			isa = PBXGroup;
 			children = (
-				EBCEACAD23F7D98D00166EB1 /* Private */,
+				EBCEACAD23F7D98D00166EB1 /* DataStructures */,
 				EBCEACBE23F7DB6600166EB1 /* Math */,
-				EBCEACAC23F7D94300166EB1 /* DataStructureModels */,
-				EBCEACAB23F7D91800166EB1 /* Stack */,
-				EBCEACAA23F7D91400166EB1 /* Sort */,
 				EBCEACA923F7D90C00166EB1 /* String */,
 				EBCEACA823F7D8FF00166EB1 /* Tree */,
 				EBCEACA723F7D8FA00166EB1 /* Graph */,
@@ -93,6 +66,9 @@
 				EBCEACA423F7D8CD00166EB1 /* Array */,
 				EB5F509E2314276600222E63 /* DynamicProgramming */,
 				EBCEACB923F7DA5500166EB1 /* LeetcodeSolutionSwiftHost */,
+				EBE0C69E2407807C00DBBA41 /* LeetcodeSolutionSwift */,
+				EBE0C6AC2407819400DBBA41 /* LeetcodeSolutionSwift-iOS */,
+				EBE0C6B9240782D400DBBA41 /* LeetcodeSolutionSwift */,
 				EB5F50882314263700222E63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +76,7 @@
 		EB5F50882314263700222E63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBCEACB223F7DA1D00166EB1 /* LeetcodeSolutionSwiftHost */,
+				EBE0C6B8240782D400DBBA41 /* LeetcodeSolutionSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,28 +136,7 @@
 			path = String;
 			sourceTree = "<group>";
 		};
-		EBCEACAA23F7D91400166EB1 /* Sort */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sort;
-			sourceTree = "<group>";
-		};
-		EBCEACAB23F7D91800166EB1 /* Stack */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stack;
-			sourceTree = "<group>";
-		};
-		EBCEACAC23F7D94300166EB1 /* DataStructureModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataStructureModels;
-			sourceTree = "<group>";
-		};
-		EBCEACAD23F7D98D00166EB1 /* Private */ = {
+		EBCEACAD23F7D98D00166EB1 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
 				EBD4538D23F7E23400EA669B /* ListNode.swift */,
@@ -189,7 +144,7 @@
 				EBD4539D23F7E65A00EA669B /* BinarySearchTree.swift */,
 				EBD4539323F7E2C400EA669B /* Graph.swift */,
 			);
-			path = Private;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 		EBCEACB923F7DA5500166EB1 /* LeetcodeSolutionSwiftHost */ = {
@@ -210,25 +165,64 @@
 			path = Math;
 			sourceTree = "<group>";
 		};
+		EBE0C69E2407807C00DBBA41 /* LeetcodeSolutionSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0C69F2407807C00DBBA41 /* LeetcodeSolutionSwift.h */,
+				EBE0C6A02407807C00DBBA41 /* Info.plist */,
+			);
+			path = LeetcodeSolutionSwift;
+			sourceTree = "<group>";
+		};
+		EBE0C6AC2407819400DBBA41 /* LeetcodeSolutionSwift-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0C6AD2407819400DBBA41 /* LeetcodeSolutionSwift_iOS.h */,
+				EBE0C6AE2407819400DBBA41 /* Info.plist */,
+			);
+			path = "LeetcodeSolutionSwift-iOS";
+			sourceTree = "<group>";
+		};
+		EBE0C6B9240782D400DBBA41 /* LeetcodeSolutionSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0C6BA240782D400DBBA41 /* LeetcodeSolutionSwift.h */,
+				EBE0C6BB240782D400DBBA41 /* Info.plist */,
+			);
+			path = LeetcodeSolutionSwift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		EBE0C6B3240782D400DBBA41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE0C6BC240782D400DBBA41 /* LeetcodeSolutionSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		EBCEACB123F7DA1D00166EB1 /* LeetcodeSolutionSwiftHost */ = {
+		EBE0C6B7240782D400DBBA41 /* LeetcodeSolutionSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBCEACB623F7DA1D00166EB1 /* Build configuration list for PBXNativeTarget "LeetcodeSolutionSwiftHost" */;
+			buildConfigurationList = EBE0C6BD240782D400DBBA41 /* Build configuration list for PBXNativeTarget "LeetcodeSolutionSwift" */;
 			buildPhases = (
-				EBCEACAE23F7DA1D00166EB1 /* Sources */,
-				EBCEACAF23F7DA1D00166EB1 /* Frameworks */,
-				EBCEACB023F7DA1D00166EB1 /* CopyFiles */,
+				EBE0C6B3240782D400DBBA41 /* Headers */,
+				EBE0C6B4240782D400DBBA41 /* Sources */,
+				EBE0C6B5240782D400DBBA41 /* Frameworks */,
+				EBE0C6B6240782D400DBBA41 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LeetcodeSolutionSwiftHost;
-			productName = LeetcodeSolutionSwiftHost;
-			productReference = EBCEACB223F7DA1D00166EB1 /* LeetcodeSolutionSwiftHost */;
-			productType = "com.apple.product-type.tool";
+			name = LeetcodeSolutionSwift;
+			productName = LeetcodeSolutionSwift;
+			productReference = EBE0C6B8240782D400DBBA41 /* LeetcodeSolutionSwift.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,7 +234,7 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = jojo;
 				TargetAttributes = {
-					EBCEACB123F7DA1D00166EB1 = {
+					EBE0C6B7240782D400DBBA41 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -258,37 +252,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBCEACB123F7DA1D00166EB1 /* LeetcodeSolutionSwiftHost */,
+				EBE0C6B7240782D400DBBA41 /* LeetcodeSolutionSwift */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		EBE0C6B6240782D400DBBA41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		EBCEACAE23F7DA1D00166EB1 /* Sources */ = {
+		EBE0C6B4240782D400DBBA41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD4539823F7E32300EA669B /* 452_Minimum NumberOfArrowsToBurstBalloons.swift in Sources */,
-				EBE0DAB923F825AF00D36F06 /* TreeTraversal.swift in Sources */,
-				EBCEACC023F7DB7D00166EB1 /* 367_ValidPerfectSquare.swift in Sources */,
-				EBCEACBB23F7DA5500166EB1 /* main.swift in Sources */,
-				EBD4538623F7E16000EA669B /* 665_NondecreasingArray.swift in Sources */,
-				EBD4539023F7E26500EA669B /* Tree.swift in Sources */,
-				EBD4539623F7E2E800EA669B /* 127_WordLadder.swift in Sources */,
-				EBD4539C23F7E62C00EA669B /* 515_ FindLargestValueInEachTreeRow.swift in Sources */,
-				EBD4539223F7E28800EA669B /* 687_LongestUnivaluePath.swift in Sources */,
-				EBE0DAB723F8212200D36F06 /* 107_LevelOrderFromBottom.swift in Sources */,
-				EBD4538E23F7E23400EA669B /* ListNode.swift in Sources */,
-				EBCEACBD23F7DA7400166EB1 /* 198_HouseRobber.swift in Sources */,
-				EBD4539423F7E2C400EA669B /* Graph.swift in Sources */,
-				EBD4538823F7E1B500EA669B /* 496_TeemoAttacking.swift in Sources */,
-				EBD453A223F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift in Sources */,
-				EBD4539E23F7E65A00EA669B /* BinarySearchTree.swift in Sources */,
-				EBD4539A23F7E35300EA669B /* 467_UniqueSubstringsInWraparoundString.swift in Sources */,
-				EBD4538C23F7E22600EA669B /* 25_ReverseNodesInKGroup.swift in Sources */,
-				EBD4538A23F7E1EE00EA669B /* 500_KeyboardRow.swift in Sources */,
-				EBE0DAB523F81BE800D36F06 /* 102_LevelOrderOfBinaryTree.swift in Sources */,
-				EBD453A023F7E70C00EA669B /* 104_MaxDeethOfBinaryTree.swift in Sources */,
+				EBE0C6C0240782E900DBBA41 /* Tree.swift in Sources */,
+				EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,29 +394,59 @@
 			};
 			name = Release;
 		};
-		EBCEACB723F7DA1D00166EB1 /* Debug */ = {
+		EBE0C6BE240782D400DBBA41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EL267FJ9ZW;
-				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2KUPNZEU65;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LeetcodeSolutionSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.LeetcodeSolutionSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		EBCEACB823F7DA1D00166EB1 /* Release */ = {
+		EBE0C6BF240782D400DBBA41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EL267FJ9ZW;
-				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2KUPNZEU65;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LeetcodeSolutionSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.LeetcodeSolutionSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -447,11 +462,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBCEACB623F7DA1D00166EB1 /* Build configuration list for PBXNativeTarget "LeetcodeSolutionSwiftHost" */ = {
+		EBE0C6BD240782D400DBBA41 /* Build configuration list for PBXNativeTarget "LeetcodeSolutionSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBCEACB723F7DA1D00166EB1 /* Debug */,
-				EBCEACB823F7DA1D00166EB1 /* Release */,
+				EBE0C6BE240782D400DBBA41 /* Debug */,
+				EBE0C6BF240782D400DBBA41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
