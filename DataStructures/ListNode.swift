@@ -19,11 +19,48 @@ public class ListNode {
         self.val = val
         self.next = nil
     }
+}
+
+// MARK: Print
+extension ListNode {
     public func print() {
         var p: ListNode? = self
+        var info: String = ""
         while (p != nil) {
-            Swift.print(" \(p!.val) -> ")
+            info.append("\(p!.val) -> ")
             p = p?.next
+        }
+        info.append("NULL")
+        Swift.print(info)
+    }
+}
+
+// MARK: Push
+extension ListNode {
+    /// Push a specified value next to current node
+    /// - Parameter val: the value ready to push
+    public func push(_ val: Int) {
+        let node = ListNode(val)
+        if self.next == nil {
+            self.next = node
+            return
+        }
+        let temp = self.next
+        self.next = node
+        node.next = temp
+    }
+}
+
+// MARK: Length
+extension ListNode {
+    public var length: Int {
+        get {
+            var len = 0, node: ListNode? = self
+            while node != nil {
+                len += 1
+                node = node?.next
+            }
+            return len
         }
     }
 }
@@ -37,44 +74,130 @@ extension ListNode: Equatable {
 
 // MARK: Reversed
 extension ListNode {
+    public func reversed() -> ListNode? {
+        return Self.recursiveReversed(self)
+    }
+    
     static func reversed(_ head: ListNode?) -> ListNode? {
         guard let head = head else { return nil }
-        var pre: ListNode?, curr: ListNode?
+        var result: ListNode?, curr: ListNode?
         curr = head
         while curr != nil {
             let temp = curr?.next
-            curr?.next = pre
-            pre = curr
+            curr?.next = result
+            result = curr
             curr = temp
         }
         
-        return curr
+        return result
     }
-    static func reversed2(_ head: ListNode?) -> ListNode? {
+    
+    static func recursiveReversed(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
             return nil
         }
-        if head.next == nil {
-            return nil
+        let first = head
+        var rest = first.next
+        
+        if rest == nil {
+            return first
         }
-        let p = reversed2(head.next)
-        head.next?.next = head
-        head.next = nil
-        return p
+        
+        rest = recursiveReversed(rest)
+        first.next?.next = first // 1->2<-3<-4 to  1<-2<-3<-4
+        first.next = nil
+        
+        return rest
+    }
+}
+
+// MARK: Move
+extension ListNode {
+    public static func move(source: inout ListNode?, to destination: inout ListNode?) {
+        guard let node = source else {
+            return
+        }
+        source = node.next
+        node.next = destination
+        destination = node
+    }
+}
+
+// MARK: Split
+extension ListNode {
+    public func splitHalf() -> (ListNode?, ListNode?) {
+        var fast: ListNode? = self, slow: ListNode? = self
+        if self.next == nil { return (nil,nil) }
+        while fast != nil {
+            fast = fast?.next // 1. advance fast first
+            if fast?.next != nil { // 2. advance fast and slow if fast is not at end
+                fast = fast?.next
+                slow = slow?.next
+            }
+        }
+        let front = self, back = slow?.next
+        slow?.next = nil // 3. cut the list
+        return (front,back)
     }
 }
 
 // MARK: Merge
 extension ListNode {
-    static func merge(l1: ListNode?, l2: ListNode?) -> ListNode? {
-        let dummy = ListNode(-1)
+    // l1: (1->2->3), l2: (4->5->6)
+    // shuffle merged: (1->4->2->5->3->6)
+    public static func shuffleMerge(l1: ListNode?, l2: ListNode?) -> ListNode? {
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
+        let dummy:ListNode? = ListNode(-1)
+        var head = dummy
+        var p1 = l1, p2 = l2
+        while true {
+            if p1 == nil {
+                head?.next = p2
+                break
+            } else if p2 == nil {
+                head?.next = p1
+                break
+            } else {
+                head?.next = p1
+                head = p1
+                p1 = p1?.next
+                head?.next = p2
+                head = p2
+                p2 = p2?.next
+            }
+        }
+        return dummy?.next
+    }
+    
+    public static func sortedMerge(l1: ListNode?, l2: ListNode?) -> ListNode? {
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
+        let dummy: ListNode? = ListNode(-1)
         var head: ListNode? = dummy
-        
-        return dummy.next
+        var p1 = l1, p2 = l2
+        while true {
+            if p1 == nil {
+                head?.next = p2
+                break
+            } else if p2 == nil {
+                head?.next = p1
+                break
+            } else {
+                if p1!.val <= p2!.val {
+                    head?.next = p1
+                    p1 = p1?.next
+                } else {
+                    head?.next = p2
+                    p2 = p2?.next
+                }
+                head = head?.next
+            }
+        }
+        return dummy?.next
     }
 }
 
-// MARK: Cut
 
 /*：
  Write a function to get the intersection point of two Linked Lists
