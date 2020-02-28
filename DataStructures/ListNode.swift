@@ -37,10 +37,44 @@ extension ListNode: Equatable {
 
 // MARK: Reversed
 extension ListNode {
-    func reversed() -> ListNode {
-        return self
+    static func reversed(_ head: ListNode?) -> ListNode? {
+        guard let head = head else { return nil }
+        var pre: ListNode?, curr: ListNode?
+        curr = head
+        while curr != nil {
+            let temp = curr?.next
+            curr?.next = pre
+            pre = curr
+            curr = temp
+        }
+        
+        return curr
+    }
+    static func reversed2(_ head: ListNode?) -> ListNode? {
+        guard let head = head else {
+            return nil
+        }
+        if head.next == nil {
+            return nil
+        }
+        let p = reversed2(head.next)
+        head.next?.next = head
+        head.next = nil
+        return p
     }
 }
+
+// MARK: Merge
+extension ListNode {
+    static func merge(l1: ListNode?, l2: ListNode?) -> ListNode? {
+        let dummy = ListNode(-1)
+        var head: ListNode? = dummy
+        
+        return dummy.next
+    }
+}
+
+// MARK: Cut
 
 /*：
  Write a function to get the intersection point of two Linked Lists
