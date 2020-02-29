@@ -138,3 +138,55 @@ extension BinaryTree {
         return result
     }
 }
+
+// MARK: 由 BST 结果构造树
+class TreeNodeFactory {
+//    func createTreeNode(bst: [Int?]) -> TreeNode? {
+//        if bst.isEmpty {
+//            return nil
+//        }
+//
+//        var bst = bst
+//        var depth = 0
+//        var queue: [[Int?]] = []
+//
+//        while !bst.isEmpty {
+//            var i = 2 ^ depth
+//            if i >= bst.count { i = bst.count }
+//            let levelQueue = bst[0..<i]
+//            queue.append(Array(levelQueue))
+//            let rest = bst[i..<bst.count]
+//            bst = Array(rest)
+//        }
+//
+//        var nodes: [TreeNode?] = []
+//        let root = queue.removeFirst()
+//        if root.isEmpty {
+//            return nil
+//        }
+//        guard let rootVal = root[0] else {
+//            return nil
+//        }
+//        nodes.append(TreeNode(rootVal))
+//
+//        while queue.isEmpty {
+//            let lastLevelQueue = nodes.las
+//            let levelQueue = queue.removeFirst()
+//            let nextLevelQueue = queue.first
+//            let levelNodes = levelQueue.map { (val) -> TreeNode? in
+//                guard let val = val else {
+//                    return nil
+//                }
+//                return TreeNode(val)
+//            }
+//
+//            for node in levelNodes {
+//                <#code#>
+//            }
+//
+//        }
+//        
+//        return nodes.first!
+//    }
+}
+

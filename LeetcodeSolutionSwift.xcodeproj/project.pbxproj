@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBE0C6BC240782D400DBBA41 /* LeetcodeSolutionSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE0C6BA240782D400DBBA41 /* LeetcodeSolutionSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB109727240A4641009252AE /* LeetcodeSolutionSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB88A508240A4232006363E8 /* 107_LevelOrderFromBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A504240A4232006363E8 /* 107_LevelOrderFromBottom.swift */; };
+		EB88A509240A4232006363E8 /* 103_ZigZagLevelOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A505240A4232006363E8 /* 103_ZigZagLevelOrder.swift */; };
+		EB88A50A240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A506240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift */; };
+		EB88A50B240A4232006363E8 /* 101_SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A507240A4232006363E8 /* 101_SymmetricTree.swift */; };
 		EBE0C6C0240782E900DBBA41 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538F23F7E26500EA669B /* Tree.swift */; };
 		EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538D23F7E23400EA669B /* ListNode.swift */; };
 		EBE0C6C3240795F900DBBA41 /* 92_ReverseBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0C6C2240795F900DBBA41 /* 92_ReverseBetween.swift */; };
@@ -20,7 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EBCEACBA23F7DA5500166EB1 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
+		EB109726240A4641009252AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB10972A240A47BD009252AE /* LeetcodeSolutionSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetcodeSolutionSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		EB88A504240A4232006363E8 /* 107_LevelOrderFromBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 107_LevelOrderFromBottom.swift; sourceTree = "<group>"; };
+		EB88A505240A4232006363E8 /* 103_ZigZagLevelOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 103_ZigZagLevelOrder.swift; sourceTree = "<group>"; };
+		EB88A506240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 102_LevelOrderOfBinaryTree.swift; sourceTree = "<group>"; };
+		EB88A507240A4232006363E8 /* 101_SymmetricTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 101_SymmetricTree.swift; sourceTree = "<group>"; };
 		EBCEACBC23F7DA7400166EB1 /* 198_HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 198_HouseRobber.swift; sourceTree = "<group>"; };
 		EBCEACBF23F7DB7D00166EB1 /* 367_ValidPerfectSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 367_ValidPerfectSquare.swift; sourceTree = "<group>"; };
 		EBD4538523F7E16000EA669B /* 665_NondecreasingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 665_NondecreasingArray.swift; sourceTree = "<group>"; };
@@ -38,13 +48,7 @@
 		EBD4539D23F7E65A00EA669B /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		EBD4539F23F7E70C00EA669B /* 104_MaxDeethOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 104_MaxDeethOfBinaryTree.swift; sourceTree = "<group>"; };
 		EBD453A123F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 111_MinDepthOfBinaryTree.swift; sourceTree = "<group>"; };
-		EBE0C69F2407807C00DBBA41 /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
-		EBE0C6A02407807C00DBBA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBE0C6AD2407819400DBBA41 /* LeetcodeSolutionSwift_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift_iOS.h; sourceTree = "<group>"; };
-		EBE0C6AE2407819400DBBA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE0C6B8240782D400DBBA41 /* LeetcodeSolutionSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetcodeSolutionSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBE0C6BA240782D400DBBA41 /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
-		EBE0C6BB240782D400DBBA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE0C6C2240795F900DBBA41 /* 92_ReverseBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 92_ReverseBetween.swift; sourceTree = "<group>"; };
 		EBE0C6C424079F9E00DBBA41 /* 234_Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 234_Palindrome.swift; sourceTree = "<group>"; };
 		EBE0C6C62407ACF300DBBA41 /* 21_MergeLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21_MergeLists.swift; sourceTree = "<group>"; };
@@ -52,8 +56,6 @@
 		EBE0C6CA2407B82800DBBA41 /* 148_SortList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 148_SortList.swift; sourceTree = "<group>"; };
 		EBE0C6CC2407C1E300DBBA41 /* 19_RemoveNthFromEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 19_RemoveNthFromEnd.swift; sourceTree = "<group>"; };
 		EBE0C6CE2409113400DBBA41 /* 86_Partition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 86_Partition.swift; sourceTree = "<group>"; };
-		EBE0DAB423F81BE800D36F06 /* 102_LevelOrderOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 102_LevelOrderOfBinaryTree.swift; sourceTree = "<group>"; };
-		EBE0DAB623F8212200D36F06 /* 107_LevelOrderFromBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 107_LevelOrderFromBottom.swift; sourceTree = "<group>"; };
 		EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,9 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB109724240A4641009252AE /* LeetcodeSolutionSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */,
+				EB109726240A4641009252AE /* Info.plist */,
+			);
+			path = LeetcodeSolutionSwift;
+			sourceTree = "<group>";
+		};
 		EB5F507E2314263700222E63 = {
 			isa = PBXGroup;
 			children = (
+				EB10972A240A47BD009252AE /* LeetcodeSolutionSwift.playground */,
+				EB88A50C240A423C006363E8 /* DST */,
+				EB88A503240A4232006363E8 /* BST */,
 				EBCEACAD23F7D98D00166EB1 /* DataStructures */,
 				EBCEACBE23F7DB6600166EB1 /* Math */,
 				EBCEACA923F7D90C00166EB1 /* String */,
@@ -79,10 +93,7 @@
 				EBCEACA523F7D8E000166EB1 /* LinkedList */,
 				EBCEACA423F7D8CD00166EB1 /* Array */,
 				EB5F509E2314276600222E63 /* DynamicProgramming */,
-				EBCEACB923F7DA5500166EB1 /* LeetcodeSolutionSwiftHost */,
-				EBE0C69E2407807C00DBBA41 /* LeetcodeSolutionSwift */,
-				EBE0C6AC2407819400DBBA41 /* LeetcodeSolutionSwift-iOS */,
-				EBE0C6B9240782D400DBBA41 /* LeetcodeSolutionSwift */,
+				EB109724240A4641009252AE /* LeetcodeSolutionSwift */,
 				EB5F50882314263700222E63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +112,24 @@
 				EBCEACBC23F7DA7400166EB1 /* 198_HouseRobber.swift */,
 			);
 			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
+		EB88A503240A4232006363E8 /* BST */ = {
+			isa = PBXGroup;
+			children = (
+				EB88A504240A4232006363E8 /* 107_LevelOrderFromBottom.swift */,
+				EB88A505240A4232006363E8 /* 103_ZigZagLevelOrder.swift */,
+				EB88A506240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift */,
+				EB88A507240A4232006363E8 /* 101_SymmetricTree.swift */,
+			);
+			path = BST;
+			sourceTree = "<group>";
+		};
+		EB88A50C240A423C006363E8 /* DST */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DST;
 			sourceTree = "<group>";
 		};
 		EBCEACA423F7D8CD00166EB1 /* Array */ = {
@@ -140,8 +169,6 @@
 				EBD4539B23F7E62C00EA669B /* 515_ FindLargestValueInEachTreeRow.swift */,
 				EBD4539F23F7E70C00EA669B /* 104_MaxDeethOfBinaryTree.swift */,
 				EBD453A123F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift */,
-				EBE0DAB423F81BE800D36F06 /* 102_LevelOrderOfBinaryTree.swift */,
-				EBE0DAB623F8212200D36F06 /* 107_LevelOrderFromBottom.swift */,
 				EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */,
 			);
 			path = Tree;
@@ -168,14 +195,6 @@
 			path = DataStructures;
 			sourceTree = "<group>";
 		};
-		EBCEACB923F7DA5500166EB1 /* LeetcodeSolutionSwiftHost */ = {
-			isa = PBXGroup;
-			children = (
-				EBCEACBA23F7DA5500166EB1 /* main.swift */,
-			);
-			path = LeetcodeSolutionSwiftHost;
-			sourceTree = "<group>";
-		};
 		EBCEACBE23F7DB6600166EB1 /* Math */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,33 +205,6 @@
 			path = Math;
 			sourceTree = "<group>";
 		};
-		EBE0C69E2407807C00DBBA41 /* LeetcodeSolutionSwift */ = {
-			isa = PBXGroup;
-			children = (
-				EBE0C69F2407807C00DBBA41 /* LeetcodeSolutionSwift.h */,
-				EBE0C6A02407807C00DBBA41 /* Info.plist */,
-			);
-			path = LeetcodeSolutionSwift;
-			sourceTree = "<group>";
-		};
-		EBE0C6AC2407819400DBBA41 /* LeetcodeSolutionSwift-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EBE0C6AD2407819400DBBA41 /* LeetcodeSolutionSwift_iOS.h */,
-				EBE0C6AE2407819400DBBA41 /* Info.plist */,
-			);
-			path = "LeetcodeSolutionSwift-iOS";
-			sourceTree = "<group>";
-		};
-		EBE0C6B9240782D400DBBA41 /* LeetcodeSolutionSwift */ = {
-			isa = PBXGroup;
-			children = (
-				EBE0C6BA240782D400DBBA41 /* LeetcodeSolutionSwift.h */,
-				EBE0C6BB240782D400DBBA41 /* Info.plist */,
-			);
-			path = LeetcodeSolutionSwift;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -220,7 +212,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE0C6BC240782D400DBBA41 /* LeetcodeSolutionSwift.h in Headers */,
+				EB109727240A4641009252AE /* LeetcodeSolutionSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +290,13 @@
 				EBE0C6C72407ACF300DBBA41 /* 21_MergeLists.swift in Sources */,
 				EBE0C6C92407B19C00DBBA41 /* 2_AddTwoNumbers.swift in Sources */,
 				EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */,
+				EB88A508240A4232006363E8 /* 107_LevelOrderFromBottom.swift in Sources */,
+				EB88A50B240A4232006363E8 /* 101_SymmetricTree.swift in Sources */,
+				EB88A509240A4232006363E8 /* 103_ZigZagLevelOrder.swift in Sources */,
 				EBE0C6CB2407B82800DBBA41 /* 148_SortList.swift in Sources */,
 				EBE0C6C524079F9E00DBBA41 /* 234_Palindrome.swift in Sources */,
 				EBE0C6C3240795F900DBBA41 /* 92_ReverseBetween.swift in Sources */,
+				EB88A50A240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift in Sources */,
 				EBE0C6CF2409113400DBBA41 /* 86_Partition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,13 +424,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2KUPNZEU65;
+				DEVELOPMENT_TEAM = EL267FJ9ZW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LeetcodeSolutionSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LeetcodeSolutionSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.LeetcodeSolutionSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -456,13 +453,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2KUPNZEU65;
+				DEVELOPMENT_TEAM = EL267FJ9ZW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LeetcodeSolutionSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LeetcodeSolutionSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.LeetcodeSolutionSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

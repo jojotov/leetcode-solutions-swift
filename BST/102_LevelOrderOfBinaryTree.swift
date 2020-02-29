@@ -44,28 +44,26 @@ class Solution_102 {
         var result: [[Int]] = []
         
         while !queue.isEmpty {
-            for _ in 0..<queue.count {
-                let levelQueue = queue.removeFirst()
-                var levelResult: [Int] = []
-                var nexLevelQueue: [TreeNode] = []
-                if levelQueue.isEmpty {
-                    continue
+            let levelQueue = queue.removeFirst()
+            var levelResult: [Int] = []
+            var nextLevelQueue: [TreeNode] = []
+            if levelQueue.isEmpty {
+                continue
+            }
+            for node in levelQueue {
+                levelResult.append(node.val)
+                if let left = node.left {
+                    nextLevelQueue.append(left)
                 }
-                for node in levelQueue {
-                    levelResult.append(node.val)
-                    if let left = node.left {
-                        nexLevelQueue.append(left)
-                    }
-                    if let right = node.right {
-                        nexLevelQueue.append(right)
-                    }
+                if let right = node.right {
+                    nextLevelQueue.append(right)
                 }
-                if !nexLevelQueue.isEmpty {
-                    queue.append(nexLevelQueue)
-                }
-                if !levelResult.isEmpty {
-                    result.append(levelResult)
-                }
+            }
+            if !nextLevelQueue.isEmpty {
+                queue.append(nextLevelQueue)
+            }
+            if !levelResult.isEmpty {
+                result.append(levelResult)
             }
         }
         
