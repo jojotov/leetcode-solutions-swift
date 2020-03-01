@@ -33,30 +33,27 @@ class Solution_86 {
     func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
         if head == nil { return nil }
         var p: ListNode? = head
-        var large: ListNode?
-        var small: ListNode?
-        
+        let dummySmall = ListNode(-1), dummyLarge = ListNode(-1)
+        var small: ListNode? = dummySmall, large: ListNode? = dummyLarge
+
         while p != nil {
-            if small != nil && large != nil {
-                break
-            }
-            if p!.val <= x {
-                small = p
+            if p!.val < x {
+                // move p to small
+                let temp = p
+                p = temp?.next
+                temp?.next = nil
+                small?.next = temp
+                small = small?.next
             } else {
-                large = p
-            }
-            p = p?.next
-        }
-        
-        let dummy = ListNode(-1)
-        dummy.next = small
-        p = head
-        
-        while p != nil {
-            if p!.val <= x {
-                dummy.next = p
+                // move p to large
+                let temp = p
+                p = temp?.next
+                temp?.next = nil
+                large?.next = temp
+                large = large?.next
             }
         }
-        return dummy.next
+        small?.next = dummyLarge.next
+        return dummySmall.next
     }
 }
