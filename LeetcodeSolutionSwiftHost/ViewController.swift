@@ -39,23 +39,24 @@ class ViewController: UIViewController {
         
 
         let cache = LRUCache(2 /* 缓存容量 */)
-        cache.put(1, 1)
-        cache.put(2, 2)
-        print("Get 1: \(cache.get(1)), should return: 1")       // 返回  1
-        cache.put(3, 3)           // 该操作会使得密钥 2 作废
-        print("Get 2: \(cache.get(2)), should return: -1")      // 返回 -1 (未找到)
-        cache.put(4, 4)           // 该操作会使得密钥 1 作废
-        print("Get 1: \(cache.get(1)), should return: -1")      // 返回 -1 (未找到)
-        print("Get 3: \(cache.get(3)), should return: 3")      // 返回 3
-        print("Get 4: \(cache.get(4)), should return: 4")      // 返回 4
+//        cache.put(1, 1)
+//        cache.put(2, 2)
+//        print("Get 1: \(cache.get(1)), should return: 1")       // 返回  1
+//        cache.put(3, 3)           // 该操作会使得密钥 2 作废
+//        print("Get 2: \(cache.get(2)), should return: -1")      // 返回 -1 (未找到)
+//        cache.put(4, 4)           // 该操作会使得密钥 1 作废
+//        print("Get 1: \(cache.get(1)), should return: -1")      // 返回 -1 (未找到)
+//        print("Get 3: \(cache.get(3)), should return: 3")      // 返回 3
+//        print("Get 4: \(cache.get(4)), should return: 4")      // 返回 4
 
-//        
+//
 //        let cache2 = LRUCache(1 /* 缓存容量 */)
 //        cache2.put(2, 1)
 //        print("Get 1: \(cache2.get(2)), should return: 1")       // 返回  1
 //        cache2.put(3, 2)           // 该操作会使得密钥 2 作废
 //        print("Get 2: \(cache2.get(2)), should return: -1")      // 返回 -1 (未找到)
 //        print("Get 3: \(cache2.get(3)), should return: 2")      // 返回 3
+
     }
 
 

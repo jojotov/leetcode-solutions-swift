@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB049E34240E6E1800D503A4 /* 34_SearchRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E33240E6E1800D503A4 /* 34_SearchRange.swift */; };
 		EB109727240A4641009252AE /* LeetcodeSolutionSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB852405240B67A600E7CBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852404240B67A600E7CBC3 /* AppDelegate.swift */; };
 		EB852407240B67A600E7CBC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852406240B67A600E7CBC3 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB049E33240E6E1800D503A4 /* 34_SearchRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 34_SearchRange.swift; sourceTree = "<group>"; };
 		EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
 		EB109726240A4641009252AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB10972A240A47BD009252AE /* LeetcodeSolutionSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetcodeSolutionSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB049E32240E6E0600D503A4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EB049E33240E6E1800D503A4 /* 34_SearchRange.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		EB109724240A4641009252AE /* LeetcodeSolutionSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				EB10972A240A47BD009252AE /* LeetcodeSolutionSwift.playground */,
+				EB049E32240E6E0600D503A4 /* Search */,
 				EB88A50C240A423C006363E8 /* DST */,
 				EB88A503240A4232006363E8 /* BST */,
 				EBCEACAD23F7D98D00166EB1 /* DataStructures */,
@@ -388,6 +399,7 @@
 				EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */,
 				EB88A508240A4232006363E8 /* 107_LevelOrderFromBottom.swift in Sources */,
 				EB88A50B240A4232006363E8 /* 101_SymmetricTree.swift in Sources */,
+				EB049E34240E6E1800D503A4 /* 34_SearchRange.swift in Sources */,
 				EB88A509240A4232006363E8 /* 103_ZigZagLevelOrder.swift in Sources */,
 				EBE0C6CB2407B82800DBBA41 /* 148_SortList.swift in Sources */,
 				EBE0C6C524079F9E00DBBA41 /* 234_Palindrome.swift in Sources */,
