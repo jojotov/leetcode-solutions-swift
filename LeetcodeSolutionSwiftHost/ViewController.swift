@@ -56,6 +56,9 @@ class ViewController: UIViewController {
 //        cache2.put(3, 2)           // 该操作会使得密钥 2 作废
 //        print("Get 2: \(cache2.get(2)), should return: -1")      // 返回 -1 (未找到)
 //        print("Get 3: \(cache2.get(3)), should return: 2")      // 返回 3
+        
+        
+        print("Solution 209: \(Solution_209.minSubArrayLen(7, [2,3,1,2,4,3]))")
 
     }
 
