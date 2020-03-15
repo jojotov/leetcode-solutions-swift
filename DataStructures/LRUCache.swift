@@ -46,11 +46,20 @@ import Foundation
  因此使用 HashMap 和双向链表结合。
   */
 
-public class LRUCache {
+public class LRUCache: LRU<Int, Int> {
     public static let undefinedValue = -1
     
-    private var list: DoubleList<Dictionary<Int, Int>> = DoubleList([LRUCache.undefinedValue:LRUCache.undefinedValue])
-    private var hashMap: Dictionary<Int, DoubleListNode<Dictionary<Int, Int>>>
+    public override func get(_ key: Int) -> Int {
+        if let value = super.get(key) {
+            return value
+        }
+        return LRUCache.undefinedValue
+    }
+}
+
+public class LRU<K: Hashable & Equatable, V: Equatable> {
+    private var list: DoubleList<Dictionary<K,V>>?
+    private var hashMap: Dictionary<K, DoubleListNode<Dictionary<K,V>>>
     private var capacity: Int = 0
     
     public init(_ capacity: Int) {
@@ -58,23 +67,35 @@ public class LRUCache {
         self.hashMap = Dictionary(minimumCapacity: capacity)
     }
     
-    public func get(_ key: Int) -> Int {
-        guard let node = self.hashMap[key] else { return LRUCache.undefinedValue }
-
+    public func get(_ key: K) -> V? {
+        guard let node = self.hashMap[key] else { return nil }
+        guard let list = self.list else { return nil }
+        
         // lru re-order
         // 1. find the node with key
         // 2. remove and insert
-        self.list.remove(node)
-        self.list.add(node)
+        list.remove(node)
+        list.add(node)
         
-        return node.val?.values.first ?? LRUCache.undefinedValue
+        if let value = node.val?.values.first {
+            return value
+        }
+        return nil
     }
     
-    public func put(_ key: Int, _ value: Int) {
+    public func put(_ key: K, _ value: V) {
+        guard let list = self.list else {
+            self.list = DoubleList([key:value])
+            return
+        }
+        
+        // construct node
         let nodeToAdd = DoubleListNode([key:value])
-
-        if let node = hashMap[key] {
-            list.remove(node)
+        
+        if let existedNode = hashMap[key] {
+            // lru re-order
+            // remove exited node and insert new node
+            list.remove(existedNode)
             list.add(nodeToAdd)
             hashMap[key] = nodeToAdd
             return

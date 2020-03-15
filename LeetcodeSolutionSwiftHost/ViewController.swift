@@ -59,9 +59,15 @@ class ViewController: UIViewController {
         
         
         print("Solution 209: \(Solution_209.minSubArrayLen(7, [2,3,1,2,4,3]))")
+        print("Solution 3: \(Solution_3.lengthOfLongestSubstring("abcc"))")
 
+        var s26 = [0,0,2,3,3]
+        Solution_26.removeDuplicates(&s26)
+        print("Solution 26: \(s26)")
+        print("Solution 567: \(Solution_567.checkInclusion("a", "ab"))")
     }
 
 
+    
 }
 

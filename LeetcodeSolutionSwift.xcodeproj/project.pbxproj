@@ -11,6 +11,10 @@
 		EB049E36240E98D300D503A4 /* 230_KthSmallest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E35240E98D300D503A4 /* 230_KthSmallest.swift */; };
 		EB049E37240E9A4800D503A4 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */; };
 		EB049E39240E9DF500D503A4 /* 209_MinSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E38240E9DF500D503A4 /* 209_MinSubArray.swift */; };
+		EB049E3B240FD13B00D503A4 /* 3_LengthOfLongestSubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E3A240FD13B00D503A4 /* 3_LengthOfLongestSubString.swift */; };
+		EB049E3D240FDA6200D503A4 /* 26_RemoveDuplicatesInSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E3C240FDA6200D503A4 /* 26_RemoveDuplicatesInSortedArray.swift */; };
+		EB049E3F24113B0800D503A4 /* 344_ReversedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E3E24113B0800D503A4 /* 344_ReversedString.swift */; };
+		EB049E4124113DEE00D503A4 /* 567_CheckInclusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E4024113DEE00D503A4 /* 567_CheckInclusion.swift */; };
 		EB109727240A4641009252AE /* LeetcodeSolutionSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB852405240B67A600E7CBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852404240B67A600E7CBC3 /* AppDelegate.swift */; };
 		EB852407240B67A600E7CBC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852406240B67A600E7CBC3 /* SceneDelegate.swift */; };
@@ -40,6 +44,10 @@
 		EB049E33240E6E1800D503A4 /* 34_SearchRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 34_SearchRange.swift; sourceTree = "<group>"; };
 		EB049E35240E98D300D503A4 /* 230_KthSmallest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 230_KthSmallest.swift; sourceTree = "<group>"; };
 		EB049E38240E9DF500D503A4 /* 209_MinSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 209_MinSubArray.swift; sourceTree = "<group>"; };
+		EB049E3A240FD13B00D503A4 /* 3_LengthOfLongestSubString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3_LengthOfLongestSubString.swift; sourceTree = "<group>"; };
+		EB049E3C240FDA6200D503A4 /* 26_RemoveDuplicatesInSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 26_RemoveDuplicatesInSortedArray.swift; sourceTree = "<group>"; };
+		EB049E3E24113B0800D503A4 /* 344_ReversedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 344_ReversedString.swift; sourceTree = "<group>"; };
+		EB049E4024113DEE00D503A4 /* 567_CheckInclusion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 567_CheckInclusion.swift; sourceTree = "<group>"; };
 		EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetcodeSolutionSwift.h; sourceTree = "<group>"; };
 		EB109726240A4641009252AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB10972A240A47BD009252AE /* LeetcodeSolutionSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetcodeSolutionSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -204,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD4538523F7E16000EA669B /* 665_NondecreasingArray.swift */,
+				EB049E3C240FDA6200D503A4 /* 26_RemoveDuplicatesInSortedArray.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -249,6 +258,9 @@
 				EBD4538923F7E1EE00EA669B /* 500_KeyboardRow.swift */,
 				EBD4539523F7E2E800EA669B /* 127_WordLadder.swift */,
 				EBD4539923F7E35300EA669B /* 467_UniqueSubstringsInWraparoundString.swift */,
+				EB049E3A240FD13B00D503A4 /* 3_LengthOfLongestSubString.swift */,
+				EB049E3E24113B0800D503A4 /* 344_ReversedString.swift */,
+				EB049E4024113DEE00D503A4 /* 567_CheckInclusion.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -400,10 +412,14 @@
 			files = (
 				EB049E39240E9DF500D503A4 /* 209_MinSubArray.swift in Sources */,
 				EBE0C6CD2407C1E300DBBA41 /* 19_RemoveNthFromEnd.swift in Sources */,
+				EB049E3B240FD13B00D503A4 /* 3_LengthOfLongestSubString.swift in Sources */,
 				EBE0C6C0240782E900DBBA41 /* Tree.swift in Sources */,
 				EBE0C6C72407ACF300DBBA41 /* 21_MergeLists.swift in Sources */,
 				EB049E36240E98D300D503A4 /* 230_KthSmallest.swift in Sources */,
+				EB049E3D240FDA6200D503A4 /* 26_RemoveDuplicatesInSortedArray.swift in Sources */,
 				EBE0C6C92407B19C00DBBA41 /* 2_AddTwoNumbers.swift in Sources */,
+				EB049E3F24113B0800D503A4 /* 344_ReversedString.swift in Sources */,
+				EB049E4124113DEE00D503A4 /* 567_CheckInclusion.swift in Sources */,
 				EB852417240B687100E7CBC3 /* LRUCache.swift in Sources */,
 				EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */,
 				EB88A508240A4232006363E8 /* 107_LevelOrderFromBottom.swift in Sources */,
