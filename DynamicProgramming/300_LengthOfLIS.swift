@@ -36,6 +36,6 @@ import Foundation
 
 class Solution_300 {
     static func lengthOfLIS(_ nums: [Int]) -> Int {
-        
+        return 0
     }
 }

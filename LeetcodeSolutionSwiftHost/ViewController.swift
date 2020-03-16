@@ -58,13 +58,16 @@ class ViewController: UIViewController {
 //        print("Get 3: \(cache2.get(3)), should return: 2")      // 返回 3
         
         
-        print("Solution 209: \(Solution_209.minSubArrayLen(7, [2,3,1,2,4,3]))")
-        print("Solution 3: \(Solution_3.lengthOfLongestSubstring("abcc"))")
-
-        var s26 = [0,0,2,3,3]
-        Solution_26.removeDuplicates(&s26)
-        print("Solution 26: \(s26)")
-        print("Solution 567: \(Solution_567.checkInclusion("a", "ab"))")
+//        print("Solution 209: \(Solution_209.minSubArrayLen(7, [2,3,1,2,4,3]))")
+//        print("Solution 3: \(Solution_3.lengthOfLongestSubstring("abcc"))")
+//
+//        var s26 = [0,0,2,3,3]
+//        Solution_26.removeDuplicates(&s26)
+//        print("Solution 26: \(s26)")
+//        print("Solution 567: \(Solution_567.checkInclusion("a", "ab"))")
+//        
+//        
+        print("solution 343: \(Solution_343.integerBreak1(10))")
     }
 
 
