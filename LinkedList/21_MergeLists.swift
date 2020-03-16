@@ -27,31 +27,27 @@
 import Foundation
 class Solution_21 {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        if l1 == nil {
-            return l2
-        }
-        if l2 == nil {
-            return l1
-        }
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
         let dummy = ListNode(-1)
         var head: ListNode? = dummy
         var p1 = l1, p2 = l2
-        
-        while p1 != nil || p2 != nil {
-            if p1 == nil || ((p2 != nil) && p1!.val > p2!.val) {
+        while p1 != nil && p2 != nil {
+            // 判断当前指针大小
+            if p1!.val <= p2!.val {
+                head?.next = p1
+                p1 = p1?.next
+            }
+            else {
                 head?.next = p2
                 p2 = p2?.next
             }
-            else if p2 == nil || ((p1 != nil) && p1!.val < p2!.val) {
-                head?.next = p1
-                p1 = p1?.next
-            } else {
-                // equal
-                head?.next = p1
-                p1 = p1?.next
-            }
+            
             head = head?.next
         }
+        
+        // 判断链表 1 是否已经走完，是的话直接接上链表 2，否则接上链表 1
+        head?.next = p1 == nil ? p2 : p1
         
         return dummy.next
     }
@@ -72,6 +68,5 @@ class Solution_21 {
             l2.next = mergeTwoLists2(l1, l2.next)
             return l2
         }
-        return nil
     }
 }
