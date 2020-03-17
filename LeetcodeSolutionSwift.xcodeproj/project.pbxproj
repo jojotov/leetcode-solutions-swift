@@ -18,6 +18,7 @@
 		EB109727240A4641009252AE /* LeetcodeSolutionSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EB109725240A4641009252AE /* LeetcodeSolutionSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB4A97BB241F75A20082EEC0 /* 300_LengthOfLIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A97BA241F75A20082EEC0 /* 300_LengthOfLIS.swift */; };
 		EB4F7733241FA80800FA7ED1 /* 343_CuttingRope.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F7732241FA80800FA7ED1 /* 343_CuttingRope.swift */; };
+		EB4F7735241FD87A00FA7ED1 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F7734241FD87A00FA7ED1 /* PriorityQueue.swift */; };
 		EB852405240B67A600E7CBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852404240B67A600E7CBC3 /* AppDelegate.swift */; };
 		EB852407240B67A600E7CBC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852406240B67A600E7CBC3 /* SceneDelegate.swift */; };
 		EB852409240B67A600E7CBC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852408240B67A600E7CBC3 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		EB10972A240A47BD009252AE /* LeetcodeSolutionSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetcodeSolutionSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EB4A97BA241F75A20082EEC0 /* 300_LengthOfLIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 300_LengthOfLIS.swift; sourceTree = "<group>"; };
 		EB4F7732241FA80800FA7ED1 /* 343_CuttingRope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 343_CuttingRope.swift; sourceTree = "<group>"; };
+		EB4F7734241FD87A00FA7ED1 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		EB852402240B67A600E7CBC3 /* LeetcodeSolutionSwiftHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetcodeSolutionSwiftHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB852404240B67A600E7CBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB852406240B67A600E7CBC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				EBD4539323F7E2C400EA669B /* Graph.swift */,
 				EB852416240B687100E7CBC3 /* LRUCache.swift */,
 				EB852418240B695D00E7CBC3 /* DoubleListNode.swift */,
+				EB4F7734241FD87A00FA7ED1 /* PriorityQueue.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				EBE0C6CD2407C1E300DBBA41 /* 19_RemoveNthFromEnd.swift in Sources */,
 				EB049E3B240FD13B00D503A4 /* 3_LengthOfLongestSubString.swift in Sources */,
 				EBE0C6C0240782E900DBBA41 /* Tree.swift in Sources */,
+				EB4F7735241FD87A00FA7ED1 /* PriorityQueue.swift in Sources */,
 				EBFA19BB241F5642005BEF6B /* 169_MajorityElement.swift in Sources */,
 				EB4F7733241FA80800FA7ED1 /* 343_CuttingRope.swift in Sources */,
 				EBE0C6C72407ACF300DBBA41 /* 21_MergeLists.swift in Sources */,

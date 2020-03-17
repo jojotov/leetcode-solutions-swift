@@ -65,9 +65,22 @@ class ViewController: UIViewController {
 //        Solution_26.removeDuplicates(&s26)
 //        print("Solution 26: \(s26)")
 //        print("Solution 567: \(Solution_567.checkInclusion("a", "ab"))")
-//        
-//        
+//
+//
         print("solution 343: \(Solution_343.integerBreak1(10))")
+        
+        
+//        let pq = PriorityQueue<Int>(-1)
+//        pq.insert(5)
+//        pq.insert(1)
+//        pq.insert(4)
+//        print("Pop : \(pq.pop())") // should be 1
+//        print("Pop : \(pq.pop())") // should be 4
+//        pq.insert(6)
+//        pq.insert(2)
+//        print("Pop : \(pq.pop())") // should be 2
+//        print("Pop : \(pq.pop())") // should be 5
+
     }
 
 
