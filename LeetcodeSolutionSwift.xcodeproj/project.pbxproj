@@ -21,6 +21,8 @@
 		EB4F7735241FD87A00FA7ED1 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F7734241FD87A00FA7ED1 /* PriorityQueue.swift */; };
 		EB4F773724211EA700FA7ED1 /* 160_FindIntersectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F773624211EA700FA7ED1 /* 160_FindIntersectionNode.swift */; };
 		EB4F7739242122B500FA7ED1 /* 142_CycleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F7738242122B500FA7ED1 /* 142_CycleList.swift */; };
+		EB4F773C2422377200FA7ED1 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F773B2422377200FA7ED1 /* MergeSort.swift */; };
+		EB4F773E242252E700FA7ED1 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F773D242252E700FA7ED1 /* QuickSort.swift */; };
 		EB852405240B67A600E7CBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852404240B67A600E7CBC3 /* AppDelegate.swift */; };
 		EB852407240B67A600E7CBC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852406240B67A600E7CBC3 /* SceneDelegate.swift */; };
 		EB852409240B67A600E7CBC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB852408240B67A600E7CBC3 /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		EB4F7734241FD87A00FA7ED1 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		EB4F773624211EA700FA7ED1 /* 160_FindIntersectionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 160_FindIntersectionNode.swift; sourceTree = "<group>"; };
 		EB4F7738242122B500FA7ED1 /* 142_CycleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 142_CycleList.swift; sourceTree = "<group>"; };
+		EB4F773B2422377200FA7ED1 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		EB4F773D242252E700FA7ED1 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		EB852402240B67A600E7CBC3 /* LeetcodeSolutionSwiftHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetcodeSolutionSwiftHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB852404240B67A600E7CBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB852406240B67A600E7CBC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 		EB4F773A2422373400FA7ED1 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				EB4F773B2422377200FA7ED1 /* MergeSort.swift */,
+				EB4F773D242252E700FA7ED1 /* QuickSort.swift */,
 			);
 			name = Sort;
 			path = Search/Sort;
@@ -461,7 +467,9 @@
 				EB88A509240A4232006363E8 /* 103_ZigZagLevelOrder.swift in Sources */,
 				EB4F773724211EA700FA7ED1 /* 160_FindIntersectionNode.swift in Sources */,
 				EBE0C6CB2407B82800DBBA41 /* 148_SortList.swift in Sources */,
+				EB4F773C2422377200FA7ED1 /* MergeSort.swift in Sources */,
 				EBE0C6C524079F9E00DBBA41 /* 234_Palindrome.swift in Sources */,
+				EB4F773E242252E700FA7ED1 /* QuickSort.swift in Sources */,
 				EBE0C6C3240795F900DBBA41 /* 92_ReverseBetween.swift in Sources */,
 				EB88A50A240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift in Sources */,
 				EBE0C6CF2409113400DBBA41 /* 86_Partition.swift in Sources */,

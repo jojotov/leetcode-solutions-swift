@@ -80,6 +80,9 @@ class ViewController: UIViewController {
 //        pq.insert(2)
 //        print("Pop : \(pq.pop())") // should be 2
 //        print("Pop : \(pq.pop())") // should be 5
+        
+//        print("Sorted: \(MergeSort.sort([2,5,6,3,4,7,8]))")
+        print("Sorted: \(QuickSort.sort([2,5,6,3,4,7,8]))")
 
     }
 
