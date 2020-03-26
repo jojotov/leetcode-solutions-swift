@@ -36,6 +36,9 @@
 		EB88A509240A4232006363E8 /* 103_ZigZagLevelOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A505240A4232006363E8 /* 103_ZigZagLevelOrder.swift */; };
 		EB88A50A240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A506240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift */; };
 		EB88A50B240A4232006363E8 /* 101_SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88A507240A4232006363E8 /* 101_SymmetricTree.swift */; };
+		EBC23B502428DA5B00E9325A /* 1143_LCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC23B4F2428DA5B00E9325A /* 1143_LCS.swift */; };
+		EBC23B522428E7F500E9325A /* 70_ClimbStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC23B512428E7F500E9325A /* 70_ClimbStairs.swift */; };
+		EBC23B552428EBAC00E9325A /* 198_Rob.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC23B542428EBAC00E9325A /* 198_Rob.swift */; };
 		EBE0C6C0240782E900DBBA41 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538F23F7E26500EA669B /* Tree.swift */; };
 		EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4538D23F7E23400EA669B /* ListNode.swift */; };
 		EBE0C6C3240795F900DBBA41 /* 92_ReverseBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0C6C2240795F900DBBA41 /* 92_ReverseBetween.swift */; };
@@ -80,6 +83,9 @@
 		EB88A505240A4232006363E8 /* 103_ZigZagLevelOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 103_ZigZagLevelOrder.swift; sourceTree = "<group>"; };
 		EB88A506240A4232006363E8 /* 102_LevelOrderOfBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 102_LevelOrderOfBinaryTree.swift; sourceTree = "<group>"; };
 		EB88A507240A4232006363E8 /* 101_SymmetricTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 101_SymmetricTree.swift; sourceTree = "<group>"; };
+		EBC23B4F2428DA5B00E9325A /* 1143_LCS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1143_LCS.swift; sourceTree = "<group>"; };
+		EBC23B512428E7F500E9325A /* 70_ClimbStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 70_ClimbStairs.swift; sourceTree = "<group>"; };
+		EBC23B542428EBAC00E9325A /* 198_Rob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 198_Rob.swift; sourceTree = "<group>"; };
 		EBCEACBC23F7DA7400166EB1 /* 198_HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 198_HouseRobber.swift; sourceTree = "<group>"; };
 		EBCEACBF23F7DB7D00166EB1 /* 367_ValidPerfectSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 367_ValidPerfectSquare.swift; sourceTree = "<group>"; };
 		EBD4538523F7E16000EA669B /* 665_NondecreasingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 665_NondecreasingArray.swift; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 				EBCEACBC23F7DA7400166EB1 /* 198_HouseRobber.swift */,
 				EB4A97BA241F75A20082EEC0 /* 300_LengthOfLIS.swift */,
 				EB4F7732241FA80800FA7ED1 /* 343_CuttingRope.swift */,
+				EBC23B4F2428DA5B00E9325A /* 1143_LCS.swift */,
+				EBC23B512428E7F500E9325A /* 70_ClimbStairs.swift */,
+				EBC23B542428EBAC00E9325A /* 198_Rob.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -444,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB4A97BB241F75A20082EEC0 /* 300_LengthOfLIS.swift in Sources */,
+				EBC23B522428E7F500E9325A /* 70_ClimbStairs.swift in Sources */,
 				EB049E39240E9DF500D503A4 /* 209_MinSubArray.swift in Sources */,
 				EBE0C6CD2407C1E300DBBA41 /* 19_RemoveNthFromEnd.swift in Sources */,
 				EB4F7739242122B500FA7ED1 /* 142_CycleList.swift in Sources */,
@@ -458,10 +468,12 @@
 				EBE0C6C92407B19C00DBBA41 /* 2_AddTwoNumbers.swift in Sources */,
 				EB049E3F24113B0800D503A4 /* 344_ReversedString.swift in Sources */,
 				EB049E4124113DEE00D503A4 /* 567_CheckInclusion.swift in Sources */,
+				EBC23B552428EBAC00E9325A /* 198_Rob.swift in Sources */,
 				EB852417240B687100E7CBC3 /* LRUCache.swift in Sources */,
 				EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */,
 				EB88A508240A4232006363E8 /* 107_LevelOrderFromBottom.swift in Sources */,
 				EB88A50B240A4232006363E8 /* 101_SymmetricTree.swift in Sources */,
+				EBC23B502428DA5B00E9325A /* 1143_LCS.swift in Sources */,
 				EB049E34240E6E1800D503A4 /* 34_SearchRange.swift in Sources */,
 				EB049E37240E9A4800D503A4 /* TreeTraversal.swift in Sources */,
 				EB88A509240A4232006363E8 /* 103_ZigZagLevelOrder.swift in Sources */,

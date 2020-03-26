@@ -67,7 +67,7 @@ class ViewController: UIViewController {
 //        print("Solution 567: \(Solution_567.checkInclusion("a", "ab"))")
 //
 //
-        print("solution 343: \(Solution_343.integerBreak1(10))")
+//        print("solution 343: \(Solution_343.integerBreak1(10))")
         
         
 //        let pq = PriorityQueue<Int>(-1)
@@ -82,11 +82,12 @@ class ViewController: UIViewController {
 //        print("Pop : \(pq.pop())") // should be 5
         
 //        print("Sorted: \(MergeSort.sort([2,5,6,3,4,7,8]))")
-        print("Sorted: \(QuickSort.sort([2,5,6,3,4,7,8]))")
+//        print("Sorted: \(QuickSort.sort([2,5,6,3,4,7,8]))")
+
+//        print("LCS is \(Solution_1143.longestCommonSubsequence("sbininm", "jmjkbkjkv"))")
+//        print("Climb stairs: \(Solution_70.climbStairs(12))")
+        print("Rob: \(Solution_198.rob([2,7,9,3,1]))")
 
     }
-
-
-    
 }
 
