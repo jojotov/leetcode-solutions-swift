@@ -34,8 +34,23 @@ import Foundation
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-class Solution_300 {
-    static func lengthOfLIS(_ nums: [Int]) -> Int {
-        return 0
+public class Solution_300 {
+    public static func lengthOfLIS(_ nums: [Int]) -> Int {
+        if nums.count == 0 { return 0 }
+        var dp: [Int:Int] = [:] // index-lis
+        var result = 1
+        for i in 0..<nums.count { // 'i' representing current index
+            dp[i] = 1 // initial value
+            for j in 0..<i { // 'j' representing prev-array scanning
+                if nums[i] > nums[j] { // '>' representing 'increasing', as '>=' representing 'non-decreasing'.
+                    // current value is greater than prev-scanning value,
+                    // so it can consider as an element of LIS
+                    dp[i] = max(dp[j]! + 1, dp[i]!)
+                }
+                result = max(result, dp[i]!)
+            }
+        }
+        
+        return result
     }
 }

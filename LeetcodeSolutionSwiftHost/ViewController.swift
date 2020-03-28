@@ -86,8 +86,8 @@ class ViewController: UIViewController {
 
 //        print("LCS is \(Solution_1143.longestCommonSubsequence("sbininm", "jmjkbkjkv"))")
 //        print("Climb stairs: \(Solution_70.climbStairs(12))")
-        print("Rob: \(Solution_198.rob([2,7,9,3,1]))")
-
+//        print("Rob: \(Solution_198.rob([2,7,9,3,1]))")
+        print("LIS is : \(Solution_300.lengthOfLIS([10,22,9,33,21,50,41,60,80]))")
     }
 }
 
