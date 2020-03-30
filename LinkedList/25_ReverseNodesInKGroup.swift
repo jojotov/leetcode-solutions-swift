@@ -42,30 +42,30 @@ class Solution_25 {
         while true {
             // prev 指针指向当前区间的尾指针
             let prev = start
-            var n: ListNode? = prev, curr: ListNode? = prev
+            var fast: ListNode? = prev, curr: ListNode? = prev
             
             // start需要移动到下一区间开始位置
             start = prev?.next
             
-            // n 指针指向第k个节点
+            // fast 指针指向第k个节点
             for _ in 1...k {
-                if n == nil {
+                if fast == nil {
                     break
                 }
-                n = n?.next
+                fast = fast?.next
             }
             
-            // n已经走到链表尾端
-            if n == nil {
+            // fast 已经走到链表尾端
+            if fast == nil {
                 break
             }
             
             // 对k范围内的链表翻转
             for _ in 1..<k {
-                curr = prev?.next
-                prev?.next = curr?.next
-                curr?.next = n?.next
-                n?.next = curr
+                curr = prev?.next // prev -> (curr -> ... -> fast) ->
+                prev?.next = curr?.next // prev -> ( .. -> fast) ->
+                curr?.next = fast?.next
+                fast?.next = curr // prev -> ( .. -> fast -> curr) ->
             }
         }
         
