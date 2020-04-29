@@ -28,11 +28,24 @@ extension DoubleListNode: Equatable {
     }
 }
 
+extension DoubleListNode {
+    public static func Empty() -> DoubleListNode {
+        return DoubleListNode()
+    }
+}
+
 public class DoubleList<T: Equatable> {
-    private var head: DoubleListNode<T>?
+    public var head: DoubleListNode<T> = DoubleListNode.Empty()
+    public var tail: DoubleListNode<T> {
+        var temp = head
+        while temp.next != nil && temp.next != head {
+            temp = temp.next!
+        }
+        return temp
+    }
     
     public init(_ val: T) {
-        self.head = DoubleListNode(val)
+        self.append(DoubleListNode(val))
     }
     
     public func add(_ val: T) {
@@ -40,10 +53,6 @@ public class DoubleList<T: Equatable> {
     }
     
     public func add(_ node: DoubleListNode<T>?) {
-        guard let head = self.head else {
-            self.head = node
-            return
-        }
         let next = head.next
         head.next = node
         node?.prev = head
@@ -56,14 +65,11 @@ public class DoubleList<T: Equatable> {
     }
     
     public func append(_ node: DoubleListNode<T>?) {
-        guard let head = self.head else {
-            self.head = node
-            return
-        }
-        head.next = node
-        node?.prev = head
+        let tail = self.tail
+        node?.next = tail.next
+        tail.next = node
+        node?.prev = tail
     }
-    
     
     public func remove(_  node: DoubleListNode<T>?) {
         guard let node = node else { return }
@@ -81,19 +87,16 @@ public class DoubleList<T: Equatable> {
     }
     
     public func removeLast() -> DoubleListNode<T>? {
-        guard let head = self.head else { return nil }
-        var p = head
-        while p.next != nil {
-            p = p.next!
-        }
-        self.remove(p)
-        return p
+        let tail = self.tail
+        if tail == head { return nil }
+        self.remove(tail)
+        return tail
     }
     
     public func size() -> Int {
-        guard let head = self.head else { return 0 }
-        var p = head, count = 1
-        while p.next != nil {
+        var p = head, count = 0
+        let tail = self.tail
+        while p.next != nil && p.next != tail {
             p = p.next!
             count += 1
         }

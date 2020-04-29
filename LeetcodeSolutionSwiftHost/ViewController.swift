@@ -30,15 +30,15 @@ class ViewController: UIViewController {
 //        let sortedMerged = ListNode.sortedMerge(l1:node1, l2:node2)
 //        sortedMerged?.print()
 
-        let doubleList: DoubleList<Int> = DoubleList(1)
-        doubleList.append(2)
-        doubleList.add(1)
-        doubleList.print()
-        doubleList.removeLast()
-        doubleList.print()
-        
-
-        let cache = LRUCache(2 /* 缓存容量 */)
+//        let doubleList: DoubleList<Int> = DoubleList(1)
+//        doubleList.append(2)
+//        doubleList.add(1)
+//        doubleList.print()
+//        doubleList.removeLast()
+//        doubleList.print()
+//
+//
+//        let cache = LRUCache(2 /* 缓存容量 */)
 //        cache.put(1, 1)
 //        cache.put(2, 2)
 //        print("Get 1: \(cache.get(1)), should return: 1")       // 返回  1
@@ -89,15 +89,20 @@ class ViewController: UIViewController {
 //        print("Rob: \(Solution_198.rob([2,7,9,3,1]))")
 //        print("LIS is : \(Solution_300.lengthOfLIS([10,22,9,33,21,50,41,60,80]))")
         
-        let board = [         ["X","O","O","O","X","O","O"],["O","X","O","O","O","O","O"],["O","O","O","O","O","O","O"],["O","O","O","X","O","O","O"],["X","O","O","X","X","O","X"],["O","X","O","O","O","O","X"],["O","O","O","X","O","O","O"]
-        ]
-        var board2 = board.map { boardIn -> [Character] in
-            boardIn.map { str -> Character in
-                Character(str)
-            }
-        }
-        Solution_130().solve(&board2)
-        print(board2)
+//        let board = [         ["X","O","O","O","X","O","O"],["O","X","O","O","O","O","O"],["O","O","O","O","O","O","O"],["O","O","O","X","O","O","O"],["X","O","O","X","X","O","X"],["O","X","O","O","O","O","X"],["O","O","O","X","O","O","O"]
+//        ]
+//        var board2 = board.map { boardIn -> [Character] in
+//            boardIn.map { str -> Character in
+//                Character(str)
+//            }
+//        }
+//        Solution_130().solve(&board2)
+//        print(board2)
+        
+//        print("Last remaining: \(Solution_Int62.lastRemaining(5,3))")
+
+        print("massage: \(Solution_Massager.massage([2,7,9,3,1]))")
+
     }
 }
 
