@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839DD9C42467DD7000875965 /* 236_LCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DD9C32467DD7000875965 /* 236_LCA.swift */; };
 		EB049E34240E6E1800D503A4 /* 34_SearchRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E33240E6E1800D503A4 /* 34_SearchRange.swift */; };
 		EB049E36240E98D300D503A4 /* 230_KthSmallest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB049E35240E98D300D503A4 /* 230_KthSmallest.swift */; };
 		EB049E37240E9A4800D503A4 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		839DD9C32467DD7000875965 /* 236_LCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 236_LCA.swift; sourceTree = "<group>"; };
 		EB049E33240E6E1800D503A4 /* 34_SearchRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 34_SearchRange.swift; sourceTree = "<group>"; };
 		EB049E35240E98D300D503A4 /* 230_KthSmallest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 230_KthSmallest.swift; sourceTree = "<group>"; };
 		EB049E38240E9DF500D503A4 /* 209_MinSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 209_MinSubArray.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				EBD453A123F7E96D00EA669B /* 111_MinDepthOfBinaryTree.swift */,
 				EBE0DAB823F825AF00D36F06 /* TreeTraversal.swift */,
 				EB049E35240E98D300D503A4 /* 230_KthSmallest.swift */,
+				839DD9C32467DD7000875965 /* 236_LCA.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				EBF9AF0C2433476D00B5BE17 /* Massager.swift in Sources */,
 				EB5A1ACB243065D2006F2D03 /* 130_SurroundingArea.swift in Sources */,
 				EBC23B552428EBAC00E9325A /* 198_Rob.swift in Sources */,
+				839DD9C42467DD7000875965 /* 236_LCA.swift in Sources */,
 				EB852417240B687100E7CBC3 /* LRUCache.swift in Sources */,
 				EBE0C6C1240782F000DBBA41 /* ListNode.swift in Sources */,
 				EB88A508240A4232006363E8 /* 107_LevelOrderFromBottom.swift in Sources */,
